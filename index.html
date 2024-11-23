@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Afacad+Flux:wght@100..1000&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Cinzel:wght@400..900&family=Cookie&family=Crushed&family=Domine:wght@400..700&family=Fruktur:ital@0;1&family=Graduate&family=Great+Vibes&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Mate:ital@0;1&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Pirata+One&family=Press+Start+2P&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Aventura Assombrosa</title>
+</head>
+<body>
+<main>
+    <div class="passo ativo" id="passo-0">
+        <img src="img/passo0.jpg" alt="">
+        <p>Você se encontra em uma floresta escura. O vento sopra frio, e o som distante de uma porta rangendo pode ser ouvido. O que você faz?</p>
+        <button class="btn-proximo" data-proximo="1">Seguir o som</button>
+        <button class="btn-proximo" data-proximo="2">Ignorar e continuar caminhando</button>
+    </div>
+
+    <div class="passo" id="passo-1">
+<img src="img/mansao.jpg" alt="">
+        <p>Você segue o som e encontra uma mansão sombria. As portas estão abertas, convidando você a entrar. O que você faz?</p>
+        <button class="btn-proximo" data-proximo="3">Entrar na mansão</button>
+        <button class="btn-proximo" data-proximo="4">Ignorar e sair da floresta</button>
+    </div>
+
+    <div class="passo" id="passo-2">
+        <p>E vai perder toda aventura? Recomeçe!</p>
+        <button class="btn-proximo" data-proximo="0">RECOMEÇAR</button>
+    </div>
+
+    <div class="passo" id="passo-3">
+        <p>Dentro da mansão, você encontra um retrato de uma mulher misteriosa. Seus olhos parecem seguir você.</p>
+        <button class="btn-proximo" data-proximo="5">Tocar no retrato</button>
+        <button class="btn-proximo" data-proximo="6">Procurar por uma saída</button>
+    </div>
+
+    <div class="passo" id="passo-4">
+        <p>Você ignora a mansão e segue pela floresta. Logo, encontra uma caverna sombria.</p>
+        <button class="btn-proximo" data-proximo="7">Entrar na caverna</button>
+        <button class="btn-proximo" data-proximo="8">Voltar para a cidade</button>
+    </div>
+
+    <div class="passo" id="passo-5">
+        <p>Ao tocar o retrato, uma sombra se forma à sua frente. Ela começa a se aproximar.</p>
+        <button class="btn-proximo" data-proximo="9">Tentar fugir</button>
+        <button class="btn-proximo" data-proximo="10">Encarar a sombra</button>
+    </div>
+
+    <div class="passo" id="passo-6">
+        <p>Você tenta procurar uma saída, mas a mansão parece se expandir à sua volta. As portas se fecham.</p>
+        <button class="btn-proximo" data-proximo="11">Procurar mais fundo</button>
+        <button class="btn-proximo" data-proximo="12">Desistir e tentar quebrar a janela</button>
+    </div>
+
+    <div class="passo" id="passo-7">
+        <p>A caverna está gelada e cheia de ecos. Algo parece se mover nas sombras.</p>
+        <button class="btn-proximo" data-proximo="9">Seguir em frente na caverna</button>
+        <button class="btn-proximo" data-proximo="13">Sair rapidamente da caverna</button>
+    </div>
+
+    <div class="passo" id="passo-8">
+        <p>Você decide voltar para a cidade. No entanto, algo está diferente, e a cidade parece vazia, sombria.</p>
+        <button class="btn-proximo" data-proximo="12">Procurar abrigo</button>
+        <button class="btn-proximo" data-proximo="9">Voltar à floresta</button>
+    </div>
+
+    <div class="passo" id="passo-9">
+        <p>Você tenta fugir, mas as sombras parecem te seguir. Você está preso em um ciclo interminável.</p>
+        <button class="btn-proximo" data-proximo="14">Rendição à escuridão</button>
+        <button class="btn-proximo" data-proximo="15">Buscar uma saída para sempre</button>
+    </div>
+
+    <div class="passo" id="passo-10">
+        <p>Você encara a sombra e, ao fazer isso, começa a sentir a presença de almas aprisionadas. Elas sussurram para você, pedindo ajuda.</p>
+        <button class="btn-proximo" data-proximo="16">Libertar as almas</button>
+        <button class="btn-proximo" data-proximo="17">Ignorar e fugir</button>
+    </div>
+
+    <div class="passo" id="passo-11">
+        <p>Você decide explorar mais fundo, mas logo se vê preso em uma sala escura. As paredes começam a se mover, e você sente o ar ficar pesado.</p>
+        <button class="btn-proximo" data-proximo="14">Não há mais saída</button>
+        <button class="btn-proximo" data-proximo="17">Tentar escapar</button>
+    </div>
+
+    <div class="passo" id="passo-12">
+        <p>Você tenta escapar pela janela, mas o vidro se quebra e você cai em um abismo. Você não consegue sair.</p>
+        <button class="btn-proximo" data-proximo="14">Rendição à escuridão</button>
+    </div>
+
+    <div class="passo" id="passo-13">
+        <p>Você sai da caverna e encontra uma clareira iluminada pela lua. Finalmente livre da escuridão, você respira aliviado. Mas algo está errado. Você percebe que está de volta à mansão.</p>
+        <button class="btn-proximo" data-proximo="14">A mansão nunca te deixará ir</button>
+        <button class="btn-proximo" data-proximo="16">Você encontrou a paz ao libertar as almas</button>
+    </div>
+
+    <div class="passo" id="passo-14">
+        <img src="img/passo14.jpg" alt="">
+        <p>Você se perdeu nas sombras da mansão, sem conseguir escapar. O silêncio eterno toma conta de sua alma.</p>
+
+    </div>
+
+    <div class="passo" id="passo-15">
+        <img src="img/passo15.jpg" alt="">
+        <p>Ao fugir das sombras, você encontra finalmente a liberdade, mas não sem perder algo de si mesmo. Você se livra da maldição da mansão, mas a memória dela será para sempre.</p>
+        <button class="btn-proximo" data-proximo="0">Recomeçar</button>
+    </div>
+
+    <div class="passo" id="passo-16">
+        <img src="img/passo16.jpg" alt="">
+        <p>Ao libertar as almas, a mansão se desfaz, e você encontra um novo caminho à luz da lua. As almas agora podem descansar em paz, e você segue para a liberdade.</p>
+       
+    </div>
+
+    <div class="passo" id="passo-17">
+        <img src="img/passo17.jpg" alt="">
+        <p>Você ignorou as almas e fugiu, mas algo dentro de você se quebrou. Agora, você é um espectro preso à mansão, como aqueles que você ignorou.</p>
+        <button class="btn-proximo" data-proximo="0">Recomeçar</button>
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
